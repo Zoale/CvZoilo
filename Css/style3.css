@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Outfit:wght@100&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Varela+Round&display=swap');
+:root {
+    --color1: #05F140;
+    --color2: #1A181B;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--color2);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    width: 100%;
+    height: 1.5%;
+    margin: 1.5px;
+    padding: 0;
+}
+header .navbar{
+    font-family: "Press Start 2P", Helvetica;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+header .navbar #inicio {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    
+}
+
+.divisor {
+    border: #05F140;
+    border-width: 0.5rem;
+    height: 6.1rem;
+    border-style: solid;
+    background-color: #05F140;
+    transform: rotate(27deg);
+}
+
+header .navbar #informacion{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+header .navbar #sobremi{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+header .navbar #contactame{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+header .navbar #subrayado{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.1875rem;
+    color: var(--color1);
+}
+.navbar p {
+    padding: 0px;
+    margin: 40px;       
+    font-size: 1.5625rem;
+    color: var(--color1);
+}
+.imagen-circular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.objetos #l1 hr{
+    border-bottom: #05F140 7px;
+    background-color: #05F140;
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    top: 70px;
+    left: 0;
+    margin-top:35px;
+}
+.objetos #l2 hr{
+    border: solid#05F140 7px;
+    background-color: #05F140;
+    position: fixed;
+    width: 70px;
+    height: 91px;
+}
+.introduccion p {
+    display: flex;
+    font-size: 2.1875rem;
+    flex-direction: auto;
+    align-items: end;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+.base {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.imagen-circular {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 5em;
+    margin-bottom: 3em;
+
+}
+@media (max-width: 1060px){
+    .divisor{
+        display: none;
+    }
+    .navbar {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .navbar p{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 1.171875rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .introduccion p {
+        font-size: 1.640625rem;
+        
+    }  
+}
+
+@media (max-width: 680px){
+    .divisor {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .navbar p {
+        font-size: 0.78125rem;
+    }
+    .objetos #l1 hr{
+        top:5%
+
+    }
+    .introduccion p {
+        font-size: 1.09375rem;
+    }
+    img {
+        width: 150px;
+    }
+    footer p{
+        font-size: 0.78125rem;
+    }
+}
