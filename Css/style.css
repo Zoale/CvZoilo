@@ -5,7 +5,25 @@
     --color2: #1A181B;
     font-family: 'Press Start 2P', cursive;
 }
+.scroll {
+    position: relative;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+  }
 
+  @keyframes scroll-left {
+    from {
+     left: 100%;
+     width: 500%; 
+    }
+    to {
+      left: -100%;
+      width: 500%;
+    }
+  }
+  @keyframes blink {
+    100% { opacity: 1; }
+  }
 body {
     background-color: var(--color2);
     margin: 0;
@@ -121,6 +139,9 @@ p {
     font-family: 'Space Grotesk', sans-serif;
 
 }
+.introduccion #elementEl {
+    animation: blink 1s infinite;
+}
 .base {
     display: flex;
     flex-direction: column;
@@ -132,6 +153,13 @@ p {
     margin-top: 5em;
     margin-bottom: 3em;
 }
+.introduccion #elementEl::after{
+    content: "|";
+    margin-left: 5px;
+    animation: blink 0.7 infinite;
+}
+
+
 
 /* Responsive */
 @media (max-width: 550px) {
